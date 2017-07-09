@@ -78,7 +78,7 @@ class CustomGLRenderer : GLSurfaceView.Renderer{
 
 	override fun onSurfaceCreated(p0: GL10, p1: EGLConfig?) {
 		// Set the background frame color
-		GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f)
+		GLES20.glClearColor(0.0f, 0.0f, 0.0f, 0.0f)
 	}
 
 	override fun onDrawFrame(p0: GL10) {
