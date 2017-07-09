@@ -18,15 +18,6 @@
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		/>
-	
-	<com.schneppd.myopenglapp.CustomGLSurfaceView
-		android:layout_width="0dp"
-		android:layout_height="0dp"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/tvDebug"
-		/>
 	<ImageView
 		android:id="@+id/ivUserPicture"
 		android:layout_width="0dp"
@@ -36,5 +27,15 @@
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/tvDebug"
 		/>
+	<com.schneppd.myopenglapp.CustomGLSurfaceView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvDebug"
+		android:windowIsTranslucent="true"
+		/>
+
 
 </android.support.constraint.ConstraintLayout>

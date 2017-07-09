@@ -20,14 +20,17 @@ class CustomGLSurfaceView(context:Context, attrs:AttributeSet) : GLSurfaceView(c
 		// Create an OpenGL ES 2.0 context.
 		setEGLContextClientVersion(2)
 		//required for a translucent window
+		setZOrderOnTop(true)
 		setEGLConfigChooser(8, 8, 8, 8, 16, 0)
+		//holder.setFormat(PixelFormat.RGBA_8888)
+		holder.setFormat(PixelFormat.TRANSLUCENT)
 		// Set the Renderer for drawing on the GLSurfaceView
 		setRenderer(mRenderer)
 
 		// Render the view only when there is a change in the drawing data
 		renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
 
-		holder.setFormat(PixelFormat.TRANSLUCENT)
+
 
 	}
 
